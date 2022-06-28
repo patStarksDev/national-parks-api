@@ -8,7 +8,7 @@ async function reqAPI() {
         const data = await res.json()
 
         console.log(data)
-        document.querySelector('h2').innerText = data.park
+        document.querySelector('ul').append('li') = data.forEach(e => e.park)
     } catch(err) {
         console.log(err)
     }
