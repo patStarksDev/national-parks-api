@@ -10,7 +10,7 @@ async function reqAPI() {
         console.log(data)
 
         for (i = 0; i < data.length; i++) {
-            let park = data[i].park
+            let park = data[i].park.toLowerCase().split(' ').join('-')
             let ul = document.querySelector('ul')
             let li = document.createElement('li')
             ul.append(li)
