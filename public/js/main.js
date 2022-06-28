@@ -15,7 +15,7 @@ async function reqAPI() {
             let li = document.createElement('li')
             ul.append(li)
             li.setAttribute('id', `${park}`)
-            document.querySelector(`#${park}`).innerText = park
+            document.querySelector(`#${park}`).innerText = park.split('-').map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(' ')
         }
 
     } catch(err) {
