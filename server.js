@@ -1,7 +1,11 @@
+
+// modules
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const PORT = 8000
 
+// parks
 const natlParks = {
     'Alabama': [],
     'Alaska': [
@@ -412,6 +416,8 @@ const natlParks = {
     ],
 
 }
+
+app.use(cors)
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
