@@ -13,7 +13,8 @@ async function reqAPI() {
             let park = data[i].park
             let ul = document.querySelector('ul')
             let li = document.createElement('li')
-            ul.append(li).setAttribute('id', park)
+            ul.append(li)
+            li.setAttribute('id', park)
             document.querySelector('#park').innerText = park
         }
 
