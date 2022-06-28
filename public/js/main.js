@@ -9,6 +9,7 @@ async function reqAPI() {
 
         console.log(data)
         document.querySelector('h2').innerText = data.park
+    } catch(err) {
+        console.log(err)
     }
-    catch(err){console.log(err)}
 }
