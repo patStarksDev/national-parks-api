@@ -14,7 +14,7 @@ async function reqAPI() {
             let ul = document.querySelector('ul')
             let li = document.createElement('li')
             ul.append(li)
-            li.setAttribute('id', park)
+            li.setAttribute('id', `${park}`)
             document.querySelector('#park').innerText = park
         }
 
